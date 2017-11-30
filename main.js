@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var h1 = React.createElement("h1", { "id": "hOne" }, "Hello World!");
-var p = React.createElement("p", { "id": "para" }, "Inside a Para");
-var div = React.createElement("div", { "id": "d" }, h1, p);
+import Root from './app/LifeCycle.jsx';
+ReactDOM.render(<Root />, document.getElementById("container"));
 
-ReactDOM.render(div, document.getElementById("container"));
+// import Root from './app/HandleEvent.jsx';
+// ReactDOM.render(<Root />, document.getElementById("container"));
